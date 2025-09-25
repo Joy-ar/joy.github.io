@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joy Wanza Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="dark-theme">
+  <nav class="navbar">
+    <div class="logo"><span id="backButton"><</span><span id="forwardButton">>Joy Wanza</span></div>
+          <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button id="darkModeToggle" aria-label="Toggle Dark Mode" class="dark-mode-toggle">🌙</button>
+  </nav>
+
+  <header class="hero" style="background: linear-gradient(135deg, #1e1e3f, #2a2a5a); position: relative; padding: 4rem 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <div class="hero-content" style="max-width: 600px; color: white;">
+      <span class="subtitle" style="background-color: #5c4dff; padding: 0.25rem 0.75rem; border-radius: 9999px; font-weight: 600; font-size: 0.875rem;">Software Developer</span>
+      <h1 style="font-size: 3rem; font-weight: 900; margin: 1rem 0;">
+        Coding,<br />
+        <span style="color: #5c4dff;">One Line at a Time</span>
+      </h1>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+        I design and develop scalable, high-performance web applications that deliver seamless user experiences and drive business value through innovative solutions.
+      </p>
+      <div class="hero-buttons" style="display: flex; gap: 1rem;">
+        <a href="projects.html" class="btn primary-btn" style="background-color: #5c4dff; color: white; padding: 0.75rem 1.5rem; border-radius: 0.375rem; font-weight: 600; text-decoration: none;">View My Work &rarr;</a>
+        <a href="contact.html" class="btn secondary-btn" style="border: 1px solid #5c4dff; color: #5c4dff; padding: 0.75rem 1.5rem; border-radius: 0.375rem; font-weight: 600; text-decoration: none;">Get In Touch</a>
+      </div>
+      <div class="social-icons" style="margin-top: 2rem; display: flex; gap: 1rem; font-size: 1.5rem; color: #8a8aff;">
+        <a href="https://github.com/Joy-ar" aria-label="GitHub" style="color: inherit; text-decoration: none;">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/joy-wanza-a36129216/" aria-label="LinkedIn" style="color: inherit; text-decoration: none;">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </div>
+      <div class="scroll-down" style="margin-top: 3rem; font-size: 0.875rem; color: #8a8aff; cursor: pointer; user-select: none;">
+        Scroll Down<br />
+        &#x25BC;
+      </div>
+    </div>
+    <div class="hero-image" style="position: relative; max-width: 400px; border-radius: 1rem; overflow: hidden; box-shadow: 0 0 20px #5c4dff;">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Joy Wanza" style="width: 100%; height: auto; display: block; object-fit: cover;" />
+      <div class="image-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(180deg, transparent, rgba(15, 15, 35, 0.9)); color: white; padding: 1rem; text-align: left;">
+        <h3>Joy Wanza</h3>
+        <p>Software Developer</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="about-me-section" style="background-color: #1e1e3f; padding: 4rem 2rem; color: white; text-align: center;">
+    <h2>About Me</h2>
+    <p>I'm a passionate Software developer with 1 years of experience building web applications that deliver exceptional user experiences.</p>
+    <div class="about-cards" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
+      <div class="about-card" style="background-color: #2a2a5a; padding: 1.5rem; border-radius: 0.75rem; width: 280px; box-shadow: 0 0 15px rgba(92, 77, 255, 0.4); text-align: left;">
+        <h3>Frontend Development</h3>
+        <p>Creating responsive, accessible and performant user interfaces using modern web technologies.</p>
+      </div>
+      <div class="about-card" style="background-color: #2a2a5a; padding: 1.5rem; border-radius: 0.75rem; width: 280px; box-shadow: 0 0 15px rgba(92, 77, 255, 0.4); text-align: left;">
+        <h3>Backend Development</h3>
+        <p>Building robust, scalable server-side applications and APIs with a focus on security and performance.</p>
+      </div>
+      <div class="about-card" style="background-color: #2a2a5a; padding: 1.5rem; border-radius: 0.75rem; width: 280px; box-shadow: 0 0 15px rgba(92, 77, 255, 0.4); text-align: left;">
+        <h3>Problem Solving</h3>
+        <p>Applying analytical thinking and creative solutions to overcome complex technical challenges.</p>
+      </div>
+    </div>
+    <a href="about.html" class="btn primary-btn" style="margin-top: 2rem; background-color: #5c4dff; color: white; padding: 0.75rem 1.5rem; border-radius: 0.375rem; font-weight: 600; text-decoration: none;">Learn More About Me</a>
+  </section>
+
+  <section class="featured-projects-section" style="background-color: #1e1e3f; padding: 4rem 2rem; color: white; text-align: center;">
+    <h2>Featured Projects</h2>
+    <p>Here are some of my recent works that showcase my skills and expertise.</p>
+    <div class="featured-projects" style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
+      <div class="project-card" style="background-color: #2a2a5a; border-radius: 0.75rem; box-shadow: 0 0 15px rgba(92, 77, 255, 0.4); width: 320px; overflow: hidden; color: white; display: flex; flex-direction: column;">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Zapp Vendor App" style="width: 100%; height: 180px; object-fit: cover;" />
+        <div class="project-info" style="padding: 1rem 1.25rem; flex-grow: 1; display: flex; flex-direction: column; gap: 0.5rem;">
+          <h3>App</h3>
+          <p>A mobile application for vendors to manage their products, orders, and deliveries with real-time tracking.</p>
+          <div class="project-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background-color: #3a3a6a; padding: 0.25rem 0.5rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600;">Flutter</span>
+            <span style="background-color: #3a3a6a; padding: 0.25rem 0.5rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600;">.NET</span>
+            <span style="background-color: #3a3a6a; padding: 0.25rem 0.5rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600;">SQL Server</span>
+            <span style="background-color: #3a3a6a; padding: 0.25rem 0.5rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600;">AWS</span>
+          </div>
+          <a href="JaysPortfolio" class="live-demo" style="font-size: 0.875rem; font-weight: 600; color: #8a8aff; text-decoration: underline; margin-top: 0.5rem; align-self: flex-start;">Live Demo</a>
+        </div>
+      </div>
+      <div class="project-card" style="background-color: #2a2a5a; border-radius: 0.75rem; box-shadow: 0 0 15px rgba(92, 77, 255, 0.4); width: 320px; overflow: hidden; color: white; display: flex; flex-direction: column;">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Zapp Courier App" style="width: 100%; height: 180px; object-fit: cover;" />
+        <div class="project-info" style="padding: 1rem 1.25rem; flex-grow: 1; display: flex; flex-direction: column; gap: 0.5rem;">
+          <h3>App</h3>
+          <p>A mobile application for couriers to manage deliveries with real-time tracking and route optimization.</p>
+          <div class="project-tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background-color: #3a3a6a; padding: 0.25rem 0.5rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600;">Flutter</span>
+            <span style="background-color: #3a3a6a; padding: 0.25rem 0.5rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600;">.NET</span>
+            <span style="background-color: #3a3a6a; padding: 0.25rem 0.5rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600;">SQL Server</span>
+            <span style="background-color: #3a3a6a; padding: 0.25rem 0.5rem; border-radius: 0.375rem; font-size: 0.75rem; font-weight: 600;">AWS</span>
+          </div>
+          <a href="#" class="live-demo" style="font-size: 0.875rem; font-weight: 600; color: #8a8aff; text-decoration: underline; margin-top: 0.5rem; align-self: flex-start;">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" style="background: linear-gradient(90deg, #5c4dff, #3a3a6a); color: white; padding: 3rem 2rem; text-align: center;">
+    <h2>Ready to bring your project to life?</h2>
+    <p>Let's collaborate to create something exceptional that meets your business goals and delights your users.</p>
+    <a href="contact.html" class="btn primary-btn" style="background-color: rgba(255, 255, 255, 0.3); border: 2px solid white; color: white; padding: 0.75rem 1.5rem; border-radius: 0.375rem; font-weight: 600; text-decoration: none;">Get Started &rarr;</a>
+  </section>
+
+  <footer style="background-color: #0f172a; color: #cbd5e1; padding: 3rem 2rem;">
+    <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 3rem; max-width: 1000px; margin: 0 auto;">
+      <div style="flex: 1 1 300px; min-width: 280px;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 1rem;">Joy Wanza</h3>
+        <p style="line-height: 1.6; margin-bottom: 1.5rem;">
+          I'm a Software developer with a passion for building exceptional web and mobile applications that combine elegant design with powerful functionality.
+        </p>
+        <div style="display: flex; gap: 1rem; font-size: 1.5rem; color: #94a3b8;">
+          <a href="#" aria-label="GitHub" style="color: inherit; text-decoration: none;">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1C5.925 1 1 5.925 1 12c0 4.865 3.163 8.993 7.557 10.452.552.1.75-.24.75-.533 0-.263-.01-1.14-.015-2.07-3.07.667-3.72-1.48-3.72-1.48-.5-1.27-1.22-1.61-1.22-1.61-.997-.68.075-.666.075-.666 1.103.078 1.683 1.13 1.683 1.13.98 1.68 2.57 1.195 3.195.913.1-.71.383-1.195.697-1.47-2.45-.28-5.03-1.225-5.03-5.45 0-1.204.43-2.19 1.13-2.96-.11-.28-.49-1.4.11-2.92 0 0 .92-.295 3.02 1.13a10.5 10.5 0 012.75-.37c.935.005 1.875.125 2.75.37 2.1-1.425 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.76 1.13 2.96 0 4.23-2.58 5.17-5.04 5.45.39.34.74 1.01.74 2.04 0 1.47-.015 2.65-.015 3.01 0 .29.2.64.76.53C19.84 20.99 23 16.86 23 12c0-6.075-4.925-11-11-11z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" style="color: inherit; text-decoration: none;">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Twitter" style="color: inherit; text-decoration: none;">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div style="flex: 1 1 150px; min-width: 140px;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 1rem;">Quick Links</h3>
+        <ul style="list-style: none; padding: 0; line-height: 1.8;">
+          <li><a href="index.html" style="color: #cbd5e1; text-decoration: none;">Home</a></li>
+          <li><a href="about.html" style="color: #cbd5e1; text-decoration: none;">About</a></li>
+          <li><a href="projects.html" style="color: #cbd5e1; text-decoration: none;">Projects</a></li>
+          <li><a href="contact.html" style="color: #cbd5e1; text-decoration: none;">Contact</a></li>
+        </ul>
+      </div>
+      <div style="flex: 1 1 200px; min-width: 180px;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 1rem;">Contact</h3>
+        <p style="line-height: 1.6; margin-bottom: 0.5rem;">Nairobi, Kenya</p>
+        <p style="line-height: 1.6;">wanzajoy123@gmail.com</p>
+      </div>
+    </div>
+    <p style="text-align: center; margin-top: 2rem; font-size: 0.875rem; color: #64748b;">© 2025 Joy Wanza. All rights reserved.</p>
+  </footer>
+</body>
+</html>
