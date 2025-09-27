@@ -80,6 +80,9 @@ a {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--color-text-dark);
@@ -685,6 +688,7 @@ body.dark-mode .drawer-link:hover {
 
   .logo {
     font-size: 1.1rem;
+    gap: 0.125rem;
   }
 
   #backButton, #forwardButton {
@@ -706,6 +710,7 @@ body.dark-mode .drawer-link:hover {
 @media (max-width: 480px) {
   .logo {
     font-size: 1rem;
+    gap: 0.0625rem;
   }
 
   #backButton, #forwardButton {
