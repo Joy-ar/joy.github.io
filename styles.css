@@ -81,7 +81,7 @@ a {
 
 .logo {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1.34rem;
   color: var(--color-text-dark);
 }
 
@@ -93,7 +93,7 @@ body.light-mode .logo {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-links a {
@@ -943,12 +943,12 @@ body.dark-mode .drawer-link:hover {
 }
 
 /* Responsive styles for mobile */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .logo {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .navbar {
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1.4rem;
   }
 }
