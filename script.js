@@ -1,8 +1,33 @@
+const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
 const drawerToggle = document.getElementById('drawerToggle');
 const navDrawer = document.getElementById('navDrawer');
 
+// Function to update dark mode state and toggle button icon
+function updateDarkMode(isDark) {
+  if (isDark) {
+    body.classList.add('dark-mode');
+    darkModeToggle.textContent = '☀️';
+  } else {
+    body.classList.remove('dark-mode');
+    darkModeToggle.textContent = '🌙';
+  }
+}
 
+// Initialize dark mode based on system preference
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+updateDarkMode(prefersDarkScheme.matches);
+
+// Listen for changes in system preference
+prefersDarkScheme.addEventListener('change', (e) => {
+  updateDarkMode(e.matches);
+});
+
+// Toggle dark mode on button click
+darkModeToggle.addEventListener('click', () => {
+  const isDark = body.classList.toggle('dark-mode');
+  darkModeToggle.textContent = isDark ? '☀️' : '🌙';
+});
 
 // Drawer toggle logic
 if (drawerToggle && navDrawer) {
