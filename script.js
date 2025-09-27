@@ -2,8 +2,7 @@ const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
 const drawerToggle = document.getElementById('drawerToggle');
 const navDrawer = document.getElementById('navDrawer');
-const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-const navLinks = document.querySelector('.nav-links');
+
 // Function to update dark mode state and toggle button icon
 function updateDarkMode(isDark) {
   if (isDark) {
@@ -37,13 +36,6 @@ if (drawerToggle && navDrawer) {
     navDrawer.setAttribute('aria-hidden', String(isOpen));
     drawerToggle.setAttribute('aria-expanded', String(!isOpen));
     navDrawer.style.display = isOpen ? 'none' : 'block';
-  });
-}
-
-// Mobile menu toggle logic
-if (mobileMenuToggle && navLinks) {
-  mobileMenuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
   });
 }
 
