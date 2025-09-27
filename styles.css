@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-:root {
-  --color-bg-light: #ffffff;
-  --color-text-light: #1a1a2e;
-  --color-bg-dark: #0f0f23;
-  --color-text-dark: #e0e0e0;
-  --color-primary: #7c3aed;
-  --color-primary-light: #a78bfa;
-  --color-button-bg: var(--color-primary);
-  --color-button-hover-bg: #5b21b6;
-  --color-border: #2a2a4d;
-}
+/* ...existing code... */
 
 * {
   box-sizing: border-box;
@@ -20,43 +10,17 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: var(--color-bg-light);
-  color: black;
+  background-color: #fff;
+  color: #1a1a2e;
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  transition: background-color 0.3s ease, color 0.3s ease;
-
 }
 
-body.dark-mode {
-  background-color: var(--color-bg-dark);
-  color: white;
-}
 
-/* Specific styles for index page font color in dark and light mode */
-body.dark-mode .hero {
-  color: white !important;
-}
 
-body:not(.dark-mode) .hero {
-  color: black !important;
-}
 
-/* Specific styles for index page font color in dark and light mode */
-body.dark-mode .index-page {
-  color: white !important;
-}
-
-body.light-mode .index-page {
-  color: black !important;
-}
-
-body.dark-mode .about-page,
-body.dark-mode .contact-page {
-  color: white !important;
-}
 
 a {
   color: inherit;
@@ -75,16 +39,14 @@ a {
   z-index: 1000;
 }
 
+
 .logo {
   font-weight: 700;
   font-size: 1.25rem;
-  color: var(--color-text-dark);
+  color: #1a1a2e;
 }
 
-body.light-mode .logo {
-  color: var(--color-text-dark);
-  color: black;
-}
+
 
 .nav-links {
   list-style: none;
@@ -104,18 +66,7 @@ body.light-mode .logo {
   border-color: var(--color-primary);
 }
 
-.dark-mode-toggle {
-  background: none;
-  border: none;
-  font-size: 1.25rem;
-  cursor: pointer;
-  color: var(--color-primary-light);
-  transition: color 0.3s ease;
-}
 
-.dark-mode-toggle:hover {
-  color: var(--color-primary);
-}
 
 .hero {
   display: flex;
