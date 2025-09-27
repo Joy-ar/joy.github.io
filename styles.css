@@ -679,8 +679,53 @@ body.dark-mode .drawer-link:hover {
 }
 
 @media (max-width: 768px) {
-  #backButton, #forwardButton {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .logo {
     font-size: 1.1rem;
+  }
+
+  #backButton, #forwardButton {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    min-height: 44px;
+  }
+
+  .nav-links {
+    gap: 0.75rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  #backButton, #forwardButton {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.95rem;
+    min-height: 40px;
+  }
+
+  .nav-links {
+    gap: 0.25rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+
+  .navbar {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
