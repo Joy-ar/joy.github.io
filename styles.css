@@ -1,20 +1,3 @@
-/* Responsive logo styles */
-.responsive-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.25em;
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-@media (max-width: 500px) {
-  .responsive-logo {
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1rem;
-    gap: 0;
-  }
-}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 :root {
@@ -98,7 +81,7 @@ a {
 
 .logo {
   font-weight: 700;
-  font-size: 1.34rem;
+  font-size: 1.25rem;
   color: var(--color-text-dark);
 }
 
@@ -110,7 +93,7 @@ body.light-mode .logo {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .nav-links a {
@@ -680,11 +663,25 @@ body.dark-mode .drawer-link:hover {
 #backButton, #forwardButton {
   cursor: pointer;
   user-select: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.1s ease;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  min-height: 44px;
+  line-height: 1.25;
 }
 
 #backButton:hover, #forwardButton:hover {
   color: var(--color-primary);
+}
+
+#backButton:active, #forwardButton:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  #backButton, #forwardButton {
+    font-size: 1.1rem;
+  }
 }
 
 /* About page styles */
@@ -957,15 +954,4 @@ body.dark-mode .drawer-link:hover {
   margin-top: 2rem;
   font-size: 0.875rem;
   color: #64748b;
-}
-
-/* Responsive styles for mobile */
-@media (max-width: 600px) {
-  .logo {
-    font-size: 1.4rem;
-  }
-
-  .navbar {
-    padding: 0.4rem 1.4rem;
-  }
 }
